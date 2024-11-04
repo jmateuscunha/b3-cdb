@@ -1,13 +1,17 @@
 
 # CDB Earning Calculator
 
+![image](https://github.com/user-attachments/assets/9e28166b-7875-4106-b99f-539a0769c176)
+
 ## How to Run Using Docker Compose
-
- docker-compose up -d
-
+`
+docker-compose up -d
+`
 #### CDB
 
+`
 POST /api/cdb/calculate
+`
 
 Request:
 ```json

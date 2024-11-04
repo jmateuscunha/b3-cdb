@@ -1,10 +1,9 @@
 
 # CDB Earning Calculator
 
-## How to Run
+## How to Run Using Docker Compose
 
  docker-compose up -d
-
 
 #### CDB
 
@@ -19,7 +18,7 @@ Request:
 }
 ```
 
-Resposta Ok (code 200):
+Response:
 ```json
 {
   "gross": 1050.60,
@@ -27,7 +26,7 @@ Resposta Ok (code 200):
 }
 ```
 
-Response UnprocessableEntity (code 422):
+Response UnprocessableEntity:
 ```json
 {
   "timestamp": "datetime",

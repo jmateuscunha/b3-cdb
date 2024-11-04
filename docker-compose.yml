@@ -1,0 +1,33 @@
+version: "3"
+
+services:       
+    frontend:
+        container_name: b3-cdb-frontend
+        build:
+          context: ./frontend/B3.Cdb
+          dockerfile: Dockerfile
+        ports:
+          - "4200:80"
+        depends_on:
+          - backend
+
+    backend:
+        container_name: b3-cdb-api     
+        build: 
+            context: ./src
+            dockerfile: /B3.Cdb.Api/Dockerfile
+        restart: always            
+        ports:
+          - 5050:5050
+        environment: 
+            - ASPNETCORE_ENVIRONMENT=Development
+            - ASPNETCORE_URLS=http://+:5050    
+            - CDB_6=0.225
+            - CDB_12=0.20
+            - CDB_24=0.175
+            - CDB_DEFAULT=0.15
+            - CDI=0.009
+            - TD=1.08    
+                          
+
+    

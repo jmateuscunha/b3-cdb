@@ -34,10 +34,10 @@
                    step="1"
                    placeholder="Ex: 12">
             <mat-error *ngIf="calculatorForm.get('months')?.hasError('required')">
-              Informe pelo menos 1 mês para o cálculo
+              Please enter at least 1 month for calculation
             </mat-error>
             <mat-error *ngIf="calculatorForm.get('months')?.hasError('min')">
-              Período mínimo é 1
+              Minimum calculation period: 1 month required
             </mat-error>
           </mat-form-field>
 

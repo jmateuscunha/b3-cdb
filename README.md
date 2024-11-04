@@ -7,9 +7,8 @@
 
 #### CDB
 
-```http
-  POST /api/cdb/calculate
-```
+POST /api/cdb/calculate
+
 Request:
 ```json
 {
@@ -35,5 +34,6 @@ Response UnprocessableEntity:
   ]
 }
 ```
-## 
+##
 
+![image](https://github.com/user-attachments/assets/90612fea-accd-417c-894f-bed1c6a9b805)
